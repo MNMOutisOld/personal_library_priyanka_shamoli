@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Personal Library</string>
+    <string-array name="category">
+        <item>Romantic</item>
+        <item>Horror</item>
+        <item>Comedy</item>
+        <item>Scientific</item>
+        <item>History</item>
+        <item>Thriller</item>
+        <item>Poetry</item>
+        <item>Fiction</item>
+        <item>Others</item>
+    </string-array>
+</resources>

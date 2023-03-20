@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@drawable/shadow"
+    android:padding="2dp"
+
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        android:id="@+id/background_view"
+        android:elevation="2dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/sign"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/checked" />
+
+            <TextView
+                android:id="@+id/book_name_tv"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/sign"
+                android:gravity="center_vertical"
+                android:text="Book Name Here"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/edit_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/book_name_tv"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:tint="#092E9C" />
+
+            <ImageView
+                android:id="@+id/delete_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/edit_btn"
+                android:src="@drawable/ic_baseline_delete_forever_24"
+                app:tint="#D50D0D" />
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

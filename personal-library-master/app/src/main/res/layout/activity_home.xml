@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <TextView
+        android:id="@+id/hello_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/c1"
+        android:fontFamily="@font/autour_one"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Hello,Username"
+        android:textColor="@color/black"
+
+        android:textSize="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:foregroundGravity="center"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="50dp">
+
+        <ImageView
+            android:id="@+id/profile_nav"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/woman"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c1"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_bgedit"
+            android:hint="Enter Book /author Name..."
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEAEAE" />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:text="Count" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/add_pdf"
+        android:layout_below="@id/cnt"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reyclerview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Browse By Category"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/add_pdf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:src="@drawable/addbutton" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:src="@drawable/settings" />
+
+
+</RelativeLayout>
